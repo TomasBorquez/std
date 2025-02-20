@@ -2,10 +2,7 @@
 
 #include "types.h"
 #include "logger.h"
-#include "stdbool.h"
 #include "string.h"
-#include <stdbool.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 

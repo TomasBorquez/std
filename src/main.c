@@ -13,5 +13,4 @@ int main(void) {
     arena.Free(&arena);
   }
   std.End();
-  return 0;
 }
