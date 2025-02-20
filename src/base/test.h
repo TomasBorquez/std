@@ -39,9 +39,8 @@ static int current_test_assertions = 0;
     } \
     if (passed_tests == total_tests) { \
         return 0; \
-    } else { \
-        return 1; \
     } \
+    return 1; \
 } while(0)
 
 #define ASSERT_EQUAL(expected, actual) do { \

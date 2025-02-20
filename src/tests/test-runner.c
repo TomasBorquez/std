@@ -144,30 +144,30 @@ void testStringCase(void) {
     char *expectedUpper;
     char *expectedLower;
   } test_cases[] = {
-    // Basic cases
-    {"test", "TEST", "test"},
-    {"TEST", "TEST", "test"},
-    {"Test", "TEST", "test"},
+        // Basic cases
+        {"test", "TEST", "test"},
+        {"TEST", "TEST", "test"},
+        {"Test", "TEST", "test"},
 
-    // Mixed case
-    {"TeStInG123", "TESTING123", "testing123"},
-    {"HELLO world", "HELLO WORLD", "hello world"},
+        // Mixed case
+        {"TeStInG123", "TESTING123", "testing123"},
+        {"HELLO world", "HELLO WORLD", "hello world"},
 
-    // Numbers and special characters
-    {"123ABC!@#", "123ABC!@#", "123abc!@#"},
-    {"Te12St!@", "TE12ST!@", "te12st!@"},
+        // Numbers and special characters
+        {"123ABC!@#", "123ABC!@#", "123abc!@#"},
+        {"Te12St!@", "TE12ST!@", "te12st!@"},
 
-    // Spaces and empty strings
-    {"", "", ""},
-    {" ", " ", " "},
-    {"  Test  ", "  TEST  ", "  test  "},
+        // Spaces and empty strings
+        {"", "", ""},
+        {" ", " ", " "},
+        {"  Test  ", "  TEST  ", "  test  "},
 
-    // Edge cases
-    {"A", "A", "a"},
-    {"z", "Z", "z"},
-    {"Test Test", "TEST TEST", "test test"},
-    {"TeSt@123 TEST", "TEST@123 TEST", "test@123 test"}
-  };
+        // Edge cases
+        {"A", "A", "a"},
+        {"z", "Z", "z"},
+        {"Test Test", "TEST TEST", "test test"},
+        {"TeSt@123 TEST", "TEST@123 TEST", "test@123 test"}
+      };
 
   for (size_t i = 0; i < sizeof(test_cases) / sizeof(test_cases[0]); i++) {
     // Test ToUpper
@@ -215,7 +215,9 @@ void testTimeNowAndWaitTime(void) {
 }
 
 int main(void) {
-  UNITY_BEGIN(); {
+  UNITY_BEGIN();
+  // Start
+  {
     setUp();
     RUN_TEST(testPushShiftUnshift);
     RUN_TEST(testInsertOperations);
