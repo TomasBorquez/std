@@ -1,0 +1,4 @@
+cmake-build-release
+cmake-build-test
+cmake-build-debug
+.idea

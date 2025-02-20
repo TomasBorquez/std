@@ -1,0 +1,107 @@
+## TODO
+
+- [x] Tests
+  - [x] ASSERT_EQUAL
+  - [x] TEST_BEGIN
+  - [x] TEST_END
+  - [x] Clion profile selector
+- [x] Logger
+  - [x] LogInit()
+  - [x] LogInfo()
+  - [x] LogWarn()
+  - [x] LogError()
+  - [x] LogSuccess()
+  - [x] As vtable
+- [x] String library
+  - [x] String Struct
+  - [x] StrVT Struct
+  - [x] strNew
+  - [x] strNewSize
+  - [x] strCopy
+  - [x] strEqual
+  - [x] strSplit
+  - [x] strConcat
+  - [x] strToUpper
+  - [x] strToLower
+  - [x] strIsNull
+  - [x] strTrim
+  - [x] strSlice
+  - [x] Tested
+- [x] Macros/Types
+  - [x] Compiler macros (like base Mr. 4th)
+  - [x] Helper macros (like base Mr. 4th)
+- [ ] Memory
+  - [x] ArenaInit
+  - [x] ArenaAlloc
+  - [x] ArenaFree
+  - [x] ArenaVT
+  - [ ] Malloc // look for a video
+  - [ ] Free
+  - [ ] MemoryLeakInit
+  - [ ] MemoryLeakEnd
+  - [ ] Tested
+- [ ] Dynamic array
+  - [x] strVector
+    - [x] StrVectorVT struct
+    - [x] strVectorNew
+    - [x] strVectorAt
+    - [x] strVectorPush
+    - [x] strVectorPop
+    - [x] strVectorShift
+    - [x] strVectorUnshift
+    - [x] strVectorInsert
+    - [x] strVectorFree
+    - [ ] Tested
+  - [ ] IntVector
+    - [ ] Tested
+  - [ ] GenericVector (void *, size)
+    - [ ] Tested
+- [ ] Hashtable
+  - [ ] ???
+- [x] STD
+  - [x] stdInit
+  - [x] stdEnd
+- [ ] OS
+  - [x] Time
+    - [x] Sleep()
+    - [x] Now()
+    - [x] Tested
+  - [x] Random library (like in raylib)
+    - [x] GetSeed()
+    - [x] SetSeed(num)
+    - [x] Integer(min, max)
+    - [x] Float(min, max)
+    - [ ] Tested
+  - [ ] File (like in raylib)
+    - [ ] fileGetCwd()
+    - [ ] fileGetFileLength(string filename)
+    - [ ] fileCreate(string filename)
+    - [ ] fileExists(string filename)
+    - [ ] fileRename(string filename, string new_name)
+    - [ ] fileRead(M_Arena* arena, string filename)
+    - [ ] fileCreateWrite(string filename, string data)
+    - [ ] fileCreateWrite_List(string filename, string_list data)
+    - [ ] fileWrite(string filename, string data)
+    - [ ] fileWrite_List(string filename, string_list data)
+    - [ ] fileOpen(string filename)
+    - [ ] fileDelete(string filename)
+    - [ ] fileCreateDir(string dirname)
+    - [ ] fileDeleteDir(string dirname)
+    - [ ] fileOpenDir(string dirname)
+    - [ ] Tested
+  - [ ] Thread pool (like odin) 
+    - [ ] Tested
+- [ ] Vendor Libraries
+  - [ ] GLFW
+  - [ ] ImGUI
+  - [ ] Glad
+  - [ ] OpenGL
+  - [ ] HandmadeMath
+- [ ] Abstractions
+  - [ ] OpenGL
+  - [ ] GLFW
+  - [ ] Math library (like odin/raylib)
+  - [ ] ImGUI
+- [ ] Build System (Like nob.h)
+  - [ ] Based on GCC
+
